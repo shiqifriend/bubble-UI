@@ -10,6 +10,7 @@ example 文件：组件本地测试： -我们写组件的时候会需要看看�
 
 _详细说明：_
 
+```
 .husky：husky 的配置文件，执行 git 时触发的 hooks
 .vscode：vscode 的项目配置文件，若与用户配置冲突将会覆盖用户配置
 build：打包时的 vite 配置文件
@@ -36,6 +37,7 @@ prettier.config.js：prettier 配置文件
 package.json: 模块描述文件，包含基本的设置及结果
 pnpm-workspace.yaml： Monorepo+pnpm 结构的 workspace 配置文件
 tsconfig.json: ts 的基础配置文件
+```
 
 启动服务：`pnpm dev`
 
