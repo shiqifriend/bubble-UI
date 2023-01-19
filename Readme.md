@@ -4,7 +4,38 @@ pnpm 版本: 7.22.0
 
 第一步：`pnpm install`
 
+### 目录说明
+
 example 文件：组件本地测试： -我们写组件的时候会需要看看我们写出来的效果，这个时候就需要一个开发服务器来进行本地案例测试。 -用法：在`main.ts`中引入组件并注册，即可在`app.vue`中使用相关组件，注意：_组件的名称为编写组件时，组件的 name 属性，我们使用 vue3 的 script 标签的 setup 语法糖，组件 name 属性直接在 script 中写，详见我写的 button 组件_
+
+_详细说明：_
+
+.husky：husky 的配置文件，执行 git 时触发的 hooks
+.vscode：vscode 的项目配置文件，若与用户配置冲突将会覆盖用户配置
+build：打包时的 vite 配置文件
+example： 用于调试预览
+index.html: html 文件，用于浏览器页面预览
+main.ts: 入口文件 (ts 项目引入.vue 文件需要 typings 配置，已配置)
+app.vue: vue 的根组件
+vite.config.ts: Vite 配置
+typings: 对于 main.ts 中申明类型但未申明进行配置
+packages：组件、样式及其工具函数存放目录
+components 放置组件
+theme-chalk 放置样式文件
+utils 放置抽离出来的公共工具函数或函数库
+.elintignore：eslint 忽视的文件或文件夹
+.elintrc.js：eslint 配置文件
+.gitignore：git 提交忽视的文件或文件夹
+.lintstagedrc.js：lint-staged 配置文件
+.npmrc: 对 pnpm 进行一些简单的配置
+.prettierignore：prettier 忽视的文件或文件夹
+.stylelintignore：stylelint 忽视的文件或文件夹
+.styleintrc.js：stylelint 配置文件
+commitlint.config.js：commitlint 配置文件
+prettier.config.js：prettier 配置文件
+package.json: 模块描述文件，包含基本的设置及结果
+pnpm-workspace.yaml： Monorepo+pnpm 结构的 workspace 配置文件
+tsconfig.json: ts 的基础配置文件
 
 启动服务：`pnpm dev`
 
