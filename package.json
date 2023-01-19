@@ -1,0 +1,60 @@
+{
+  "name": "bubble-ui",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm run build:prod && pnpm run build:components",
+    "build:prod": "npx vite build --config ./build/viteProd.config.js  ",
+    "build:components": "npx vite build --config ./build/viteProdComponent.config.js",
+    "commit": "git-cz",
+    "lint:staged": "lint-staged",
+    "prepare": "husky install",
+    "lint:css": "stylelint \"packages/**/*.scss\" --fix --custom-syntax postcss-scss",
+    "lint:prettier": "prettier --write .",
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
+    "dev": "pnpm -C example dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.48.1",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.9.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "postcss": "^8.4.21",
+    "postcss-scss": "^4.0.6",
+    "prettier": "^2.8.3",
+    "sass": "^1.57.1",
+    "stylelint": "^14.16.1",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-order": "^6.0.1",
+    "stylelint-scss": "^4.3.0",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.4",
+    "vite-plugin-vue-setup-extend": "^0.4.0",
+    "vue": "^3.2.36"
+  },
+  "dependencies": {
+    "@bubble-ui/components": "workspace:^1.0.0",
+    "@bubble-ui/eslint-config": "workspace:^1.0.0",
+    "@bubble-ui/theme-chalk": "workspace:^1.0.0",
+    "@bubble-ui/utils": "workspace:^1.0.0"
+  }
+}

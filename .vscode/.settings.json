@@ -1,0 +1,32 @@
+{
+    "eslint.validate": [
+        "html",
+        "vue",
+        "javascript",
+        "jsx"
+    ],
+    "emmet.syntaxProfiles": {
+        "vue-html": "html",
+        "vue": "html"
+    },
+    "editor.tabSize": 2,
+    "eslint.alwaysShowStatus": true,
+    "eslint.quiet": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.fixAll": false,
+        "source.fixAll.stylelint": true
+    },
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "stylelint.enable": true,
+    "stylelint.customSyntax": "postcss-scss",
+    "stylelint.validate": [
+        "css",
+        "less",
+        "postcss",
+        "scss",
+        "vue",
+        "sass"
+    ]
+}
