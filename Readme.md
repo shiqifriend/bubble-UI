@@ -44,9 +44,9 @@ app.vue: vue 的根组件
 vite.config.ts: Vite 配置
 typings: 对于 main.ts 中申明类型但未申明进行配置
 packages：组件、样式及其工具函数存放目录
-components 放置组件
-theme-chalk 放置样式文件
-utils 放置抽离出来的公共工具函数或函数库
+-components 放置组件
+-theme-chalk 放置样式文件
+-utils 放置抽离出来的公共工具函数或函数库
 .elintignore：eslint 忽视的文件或文件夹
 .elintrc.js：eslint 配置文件
 .gitignore：git 提交忽视的文件或文件夹
@@ -95,11 +95,11 @@ pnpm run commit (或者pnpm commit)
 
 ![image-20230120131602802](C:\Users\wushiqing\AppData\Roaming\Typora\typora-user-images\image-20230120131602802.png)
 
-第二个问题按回车直接可以跳过，第三、四个问题就是让你写提交附带的信息，五六问题直接回车就是no
+第二个问题按回车直接可以跳过，第三、四个问题就是让你写提交附带的信息，五六问题直接回车就是 no
 
 ![image-20230120131822885](C:\Users\wushiqing\AppData\Roaming\Typora\typora-user-images\image-20230120131822885.png)
 
-不报错即提交完成，即可push到远程仓库了
+不报错即提交完成，即可 push 到远程仓库了
 
 ### css 规则
 
