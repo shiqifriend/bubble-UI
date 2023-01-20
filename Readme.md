@@ -83,6 +83,18 @@ tsconfig.json: ts 的基础配置文件
 10. style 代码格式修改, 注意不是 css 修改
 11. test 测试用例修改
 
+#### example
+
+```shell
+git add .
+pnpm run commit (或者pnpm commit)
+
+```
+
+
+
+
+
 ### css 规则
 
 css 规则编写需要按照一定的顺序，便于团队其他同学 codereview
