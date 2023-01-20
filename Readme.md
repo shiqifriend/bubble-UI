@@ -88,12 +88,18 @@ tsconfig.json: ts 的基础配置文件
 ```shell
 git add .
 pnpm run commit (或者pnpm commit)
-
+执行后终端出现以下界面，提供了几个提交信息选项供选择（回车选择）
 ```
 
+![image-20230120131207273](C:\Users\wushiqing\AppData\Roaming\Typora\typora-user-images\image-20230120131207273.png)
 
+![image-20230120131602802](C:\Users\wushiqing\AppData\Roaming\Typora\typora-user-images\image-20230120131602802.png)
 
+第二个问题按回车直接可以跳过，第三、四个问题就是让你写提交附带的信息，五六问题直接回车就是no
 
+![image-20230120131822885](C:\Users\wushiqing\AppData\Roaming\Typora\typora-user-images\image-20230120131822885.png)
+
+不报错即提交完成，即可push到远程仓库了
 
 ### css 规则
 
